@@ -5,7 +5,7 @@ BASE_URL = "https://api.openweathermap.org/data/2.5/weather?"
 # City Name 
 CITY = "Hyderabad"
 # API key
-API_KEY = "API_KEY"
+API_KEY = "API_KEY"  #use your personal key
 # upadting the URL
 URL = BASE_URL + "q=" + CITY + "&appid=" + API_KEY
 # HTTP request
@@ -30,5 +30,5 @@ if response.status_code == 200:
    print(f"Pressure: {pressure}")
    print(f"Weather Report: {report[0]['description']}")
 else:
-   # showing the error message
+   # for the error message
    print("Error in the HTTP request")
